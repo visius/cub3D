@@ -1,0 +1,26 @@
+{
+	"files.associations": {
+		"__split_buffer": "cpp",
+		"algorithm": "cpp",
+		"bitset": "cpp",
+		"complex": "cpp",
+		"iterator": "cpp",
+		"memory": "cpp",
+		"vector": "cpp",
+		"cstring": "cpp",
+		"__config": "cpp",
+		"__string": "cpp",
+		"cctype": "cpp",
+		"cstdio": "cpp",
+		"cwchar": "cpp",
+		"ios": "cpp",
+		"istream": "cpp",
+		"locale": "cpp",
+		"ostream": "cpp",
+		"sstream": "cpp",
+		"streambuf": "cpp",
+		"string": "cpp",
+		"string_view": "cpp",
+		"unordered_map": "cpp"
+	}
+}
