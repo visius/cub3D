@@ -1,0 +1,53 @@
+gcc -g parser.c dumpedfile.c utils.c
+
+gcc -lmlx -framework OpenGL -framework AppKit cub3d.c
+
+gcc -framework Opengl -framework Appkit libmlx.dylib cub3d.c
+
+
+openGL
+gcc -lmlx -framework OpenGL -framework AppKit cub3d.c parseres.c parser.c parsemap.c dumpedfile.c utils.c sprite.c raycast.c input.c draw.c cubmove.c bmpsave.c
+
+dylib
+gcc -framework Opengl -framework Appkit libmlx.dylib cub3d.c parseres.c parser.c parsemap.c dumpedfile.c utils.c raycast.c input.c draw.c sprite.c cubmove.c bmpsave.c
+
+optimization flags
+-Ofast -march=native
+
+debug flags
+-fsanitize=address
+
+
+
+
+
+size_t  words_count(char const *s, char sp)
+{
+    size_t  i;
+    size_t  words;
+    i = 0;
+    words = 0;
+    while (s[i])
+    {
+        if (s[i] != sp && (s[i + 1] == sp || !s[i + 1]))
+            words++;
+        i++;
+    }
+    return (words);
+}
+bcherie has notifications turned off
+
+
+BUILDDIR = build
+COPY_FILES = code/xml/schema/schema.xsd config.txt
+
+all: $(BUILDDIR) $(COPY_FILES) copy
+
+$(BUILDDIR):
+    mkdir -p $@
+
+$(COPY_FILES):
+    cp -f $@ $(BUILDDIR)
+
+copy:
+    cp -f $(COPY_FILES) $(BUILDDIR)
