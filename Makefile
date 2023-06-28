@@ -13,11 +13,12 @@ MLX =	minilibx/libmlx.a
 GL =	-lm -framework OpenGL -framework AppKit
 CC =	gcc
 
-run: all
-	./$(NAME) maps/map.cub
 
 all: lib
 	$(CC) $(CFLAGS) $(SRC) $(MLX) $(GL) -o $(NAME)
+
+run: all
+	./$(NAME) maps/map.cub
 
 lib:
 	$(MAKE) -C $(MLXLIB)
