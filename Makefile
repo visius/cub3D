@@ -26,7 +26,4 @@ clean:
 fclean: clean
 	rm -f Cub3D
 
-.PHONY: all clean
-
-# gcc test.c libmlx.a -lm -framework OpenGL -framework AppKit
-
+.PHONY: all clean fclean
