@@ -1,4 +1,4 @@
-NAME = Cub3D
+NAME = Cub3D.out
 
 SRC =	cub3d.c parser.c parseres.c parsemap.c \
 		dumpedfile.c raycast.c init.c draw.c utils.c \
@@ -13,6 +13,8 @@ MLX =	minilibx/libmlx.a
 GL =	-lm -framework OpenGL -framework AppKit
 CC =	gcc
 
+run: all
+	./$(NAME) maps/map.cub
 
 all: lib
 	$(CC) $(CFLAGS) $(SRC) $(MLX) $(GL) -o $(NAME)
@@ -24,6 +26,6 @@ clean:
 	$(MAKE) clean -C $(MLXLIB)
 
 fclean: clean
-	rm -f Cub3D
+	rm -f $(NAME)
 
 .PHONY: all clean fclean
