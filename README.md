@@ -24,4 +24,4 @@
 
 Выход из приложения ```ESC```.
 
-![screen-bmp](./cub3d.bmp)
+![screen-bmp](./cub3d_1.png)
