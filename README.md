@@ -2,7 +2,7 @@
 
  Реализация псевдо трехмерного рендера построенного на принципах рейкастинга
  написаного на языке Си, с использованием библиотеки MinilibX
- (подробнее про MinilibX: https://harm-smits.github.io/42docs/)
+ (подробнее про MinilibX: https://harm-smits.github.io/42docs/libs/minilibx.html)
 
 ## сборка проекта
 
