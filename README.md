@@ -6,7 +6,7 @@
  
  (подробнее про MinilibX: https://harm-smits.github.io/42docs/libs/minilibx.html)
 
-## сборка проекта
+## Cборка проекта
 
 ```make``` - компиляция проекта
 
